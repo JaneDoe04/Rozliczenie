@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+
+}
+.syfon_do_wyslania{
+  display: none;
+}
+.zapisywanie_strony, .zapisywanie_notatki{
+  height: 3rem;
+  width: 10rem;
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.uloz_notke{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+.flexing{
+  display: flex;
+  flex-direction: column;
+}
+.flexing .komorka{
+  flex-direction: column;
+}
+.gora_dol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+nav {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vw;
+  box-shadow: 0px 3px 3px grey;
+  width: 100vw;
+  justify-content: center;
+  gap: 10rem;
+  background-color: white;
+}
+section{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100vw;
+  padding: 2rem;
+  min-height: 30vh;
+  border: solid black 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  
+}
+section:not(.dane_4Trans):not(.lad_i_pit2):not(.lad_bez_pit2):not(.strona_arkusz2):not(.robotaju){
+  flex-direction: row;
+
+}
+.brutto_max{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+span:not(.kierowca){
+  font-weight: 1000;
+  width: 20%;
+  justify-content: right;
+  padding-left: 0.5rem;
+  display: flex;
+
+  flex-direction: row;
+}
+.kierowca{
+  font-weight: 1000;
+  padding-left:1rem ;
+}
+body{
+  background-color: #284a9b;
+
+}
+.calosc{
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.limit_zus{
+  border-bottom: solid black 1px;
+
+
+}
+.brt{
+  margin-top: 1rem;
+}
+.design{
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.7rem;
+  color: white;
+}
+.formularz{
+  gap: 1rem;
+  flex-direction: column;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.ukladanie_daty{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding-right:1rem;
+  padding-left: 1rem;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+
+
+
+  height: 100%;
+
+
+}
+.submiter{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: rgb(0, 119, 0);
+  color: white;
+  font-weight: 700;
+  height: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+.xd{
+  border-bottom: solid rgb(255, 255, 255) 3px;
+  /* border-left: solid rgb(255, 255, 255) 3px; */
+}
+.selekciory select, .selekciory input {
+  height: 2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-left: 0.6rem;
+}
+.wybor_pracownika{
+  height: 2rem;
+
+  margin-top: 2rem;
+}
+
+.ulozenie_przyciskow input{
+  height: 3rem;
+  width: 3rem;
+}
+.komorka{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.ulozenie_przyciskow{
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.strona_arkusz1{
+  background-color: white;
+  display: none;
+  flex-direction: column;
+}
+.gorny{
+  margin-top: 0.5rem;
+}
+.dolny{
+  margin-bottom: 0.5rem;
+}
+.flexowy{
+  display: flex;
+  flex-direction: row;
+}
+
+.strona_arkusz2{
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+.notatka, .notatka2{
+  height: 20rem;
+  width: 20rem;
+}.logo{
+  height: 90%;
+  margin-top: 0.3rem;
+  margin-right: 30rem;
+  background-color: white;
+  border-radius: 5%;
+}
+.robotaju{
+  background-color: white;
+  display: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+  flex-direction:column ;
+}
+.puzzle{
+  display: flex;
+  flex-direction: row;
+}
+.robotaju nav{
+  display: flex;
+  flex-direction: row;
+}
+.czesc_pierwsza:not(.calosc .czesc_pierwsza){
+  border: solid black 1px;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.saved{
+  color: green;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.calosc .czesc_pierwsza, .calosc .czesc_druga{
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  border: solid black 1px;
+}
+.liczba_roboli{
+  color: red;
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.ulga_do_oddelegowania{
+
+  border: solid rgb(0, 0, 0) 1px;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  margin-left:0px ;
+}
+
+.czesc_druga:not(.calosc .czesc_druga){
+  border: solid black 1px;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem;
+
+  justify-content: space-around;
+
+  display: flex;
+  flex-direction: column;
+}
+.dane_4Trans{
+  display: flex;
+  flex-direction: column;
+}
+.strona_lewa{
+  display: flex;
+  width: 28%;
+
+  flex-direction: column;
+}
+.nieobecnosc{
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 1000;
+}
+
+.ulozenie{
+  display: flex;
+  flex-direction: column;
+}
+.uloz2{
+  display: flex;
+  flex-direction: column;
+}
+.przyciemnij{
+  color: rgba(0, 0, 0, 0.493);
+}
